@@ -1,7 +1,4 @@
-
-    <span>
-      Logout
-    </span>
-    <span class="icon">
-    →
-    </span>
+<span>
+  <ng-content></ng-content> <!-- This will project regular content -->
+</span>
+<ng-content select="[icon]"></ng-content> <!-- This will project the icon -->
