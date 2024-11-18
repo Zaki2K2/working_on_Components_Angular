@@ -1,4 +1,6 @@
 <span>
-  <ng-content></ng-content> <!-- This will project regular content -->
+  <ng-content/>
 </span>
-<ng-content select="[icon]"></ng-content> <!-- This will project the icon -->
+<span class="icon">
+  <ng-content select="icon">Fallback</ng-content>
+</span>
